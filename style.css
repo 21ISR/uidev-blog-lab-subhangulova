@@ -1,11 +1,58 @@
+/* Общий сброс */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-header{
-    width: 300px;
-    height: 200px;
-    background-color: #0073e6;
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Фиксированная шапка */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #0073e6;
+  z-index: 100;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Контент не уходит под шапку */
+div {
+  margin: 5px;
+  flex: 1;
+  padding: 24px 16px;
+}
+
+/* Контейнер по центру */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 24px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+section{
+  
+}
+
+.history{
+  
+}
+
+img{
+  width: 100%;
 }
